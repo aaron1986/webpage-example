@@ -3,12 +3,14 @@
 }
 
 html, body {
-    display: block;
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica, sans-serif;
-    color: #000;
-    height: 100%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  color: #000;
+  height: 100%;
 }
 
 body {
@@ -39,37 +41,32 @@ nav {
     text-decoration: none;
   }
 
+  #burger-menu {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000000;
+    color: #fff;
+  }
+
   @font-face {
     font-family: navFont;
     src: url(./fonts/Kugile_Demo.ttf);
   }
 
-  section {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    margin-top: 10%;
-    z-index: 4;
-    background-color: transparent;
-  }
-
-  h1 {
-    color:#e90b0b;
-  }
-
-  footer {
-    clip-path: polygon(100% 25%, 0% 100%, 100% 100%);
-    position:fixed;
-    left: 0;
-    bottom:0;
-    width: 100%;
-    background-color: #222;
-    color: white;
-    text-align: center;
-    height: 100px;
-  }
-
-@media (max-width:400px) {
+@media (max-width:600px) {
 
  li, a {
   color:#330000;
@@ -94,38 +91,9 @@ nav {
   display: flex;
 }
 
- section {
-  display:none;
- }
-
- footer {
-  clip-path: polygon(100% 25%, 0% 100%, 100% 100%);
-  position:fixed;
-  left: 0;
-  bottom:0;
-  width: 100%;
-  background-color: #222;
-  color: white;
-  text-align: center;
-  height: 100px;
 }
 
-footer, p {
-  margin-top: 22%;
-}
-
-}
-
-#burger-menu {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 30px;
-  cursor: pointer;
-  margin: 10px;
-}
-
-@media (min-width: 401px) {
+@media (min-width: 600px) {
   #burger-menu {
     display: none; 
   }
