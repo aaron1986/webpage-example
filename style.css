@@ -8,6 +8,7 @@ html, body {
     padding: 0;
     font-family: Helvetica, sans-serif;
     color: #000;
+    height: 100%;
 }
 
 body {
@@ -78,10 +79,15 @@ nav {
   align-items: center;
  }
 
-#nav-links {
+ #nav-links {
   display: none;
   flex-direction: column;
+  justify-content: center; 
   align-items: center;
+  position: fixed; 
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #nav-links.active {
