@@ -50,6 +50,11 @@ nav {
     margin: 10px;
   }
 
+  @font-face {
+    font-family: navFont;
+    src: url(./fonts/Kugile_Demo.ttf);
+  }
+
   main {
     /*border: 2px solid tomato; */
     margin-top: 20%;
@@ -66,15 +71,15 @@ nav {
        
   footer {
     text-align: center;
-    padding: 10px 0;
-    background-color: #000000;
-    color: #fff;
+    font-family: footerFont;
   }
 
   @font-face {
-    font-family: navFont;
-    src: url(./fonts/Kugile_Demo.ttf);
+    font-family: footerFont;
+    src: url(./fonts/RusillaSerif-2OZpl.otf);
   }
+
+ 
 
 @media (max-width:600px) {
 
@@ -110,6 +115,10 @@ main, h2 {
   margin-top: 30%;
   font-size: 40px;
   margin-bottom: -2%;
+}
+
+footer, p {
+  font-size: 20px;
 }
 
 }
