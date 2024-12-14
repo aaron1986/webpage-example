@@ -70,27 +70,23 @@ nav {
 
 @media (max-width:400px) {
 
-  nav {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10%;
-  }
-
- ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  align-content: center;
-  margin-top: 16%;
- }
-
  li, a {
   color:#330000;
  }
+
+ ul {
+  align-items: center;
+ }
+
+#nav-links {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nav-links.active {
+  display: flex;
+}
 
  section {
   display:none;
@@ -114,3 +110,22 @@ footer, p {
 
 }
 
+#burger-menu {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+@media (min-width: 401px) {
+  #burger-menu {
+    display: none; 
+  }
+
+  #nav-links {
+    display: flex; 
+    flex-direction: row;
+  }
+}
